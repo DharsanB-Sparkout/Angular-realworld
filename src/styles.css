@@ -32,15 +32,12 @@
     padding-bottom: 16px;
  }
  .footer-image{
-    background: url("/assets/images/footer-background.png") #006736 0px -299.98px / 100% 282.804% no-repeat;
+    background: url("assets/images/footer-background.png") #006736 0px -299.98px / 100% 282.804% no-repeat;
  }
  
- .explore:hover .explore-img-body{
+ /* .explore:hover .explore-img-body{
     color:#006736;
- }
- 
- 
- hover:fill-green
+ } */
  .background-wavy::after{
     content:'';
     position:absolute;
@@ -49,7 +46,7 @@
     top: 120px;
     background-position: bottom;
     background-size: cover;
-    background-image: url("/assets/images/wavy-background.png");
+    background-image: url("assets/images/wavy-background.png");
  }
  
  @media (max-width:1024px){
@@ -61,6 +58,15 @@
     .accordion-item:hover .accordian-head{
        padding-top:10px;
        padding-bottom: 5px;
-     
     }
+    .background-wavy::after{
+      content:'';
+      position:absolute;
+      height: 440px;
+      width: auto;
+      top: 120px;
+      background-position: bottom;
+      background-size: cover;
+      background-image: url("assets/images/wavy-background.png");
+   }
  }

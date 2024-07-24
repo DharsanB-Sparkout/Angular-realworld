@@ -2,13 +2,13 @@
     <nav class="flex items-center justify-between flex-nowrap">
 
       <a href="#">
-        <img src="/assets/images/icons/realworld-icon.png" alt="icon" class="lg:w-auto md:w-40 w-32 h-auto"  >
+        <img src="assets/images/icons/realworld-icon.png" alt="icon" class="lg:w-auto md:w-40 w-32 h-auto"  >
       </a>
     
     
     <div class="flex flex-col lg:flex-row ">
       <div class="hidden lg:block w-full" id="dropdownbtn">
-        <div class=" flex lg:flex-row flex-col absolute top-14 right-10  lg:bg-transparent  lg:static bg-white z-10 p-5 gap-2 lg:gap-0 lg:p-0">
+        <div class=" flex lg:flex-row flex-col absolute top-14 right-10  lg:bg-transparent  lg:static bg-litegrey z-10 p-5 gap-2 lg:gap-0 lg:p-0">
           <ul class="flex flex-col lg:flex-row lg:items-center  xl:pr-76 lg:pr-16  xl:gap-65 lg:gap-14 md:gap-2">
             <li ><a href="#" class="text-green font-sourcecode md:text-base text-sm font-semibold leading-120 tracking-0.48">Explore.</a></li>
             <li ><a href="#" class="text-grey font-sourcecode md:text-base text-sm font-normal leading-120 tracking-0.48">FAQ.</a></li>
@@ -30,11 +30,11 @@
             </a>
           </div>
           <div class="flex">
-          <button class="rounded-lg xl:py-3 xl:px-7 lg:px-6 lg:py-2.5 md:px-6 md:py-2.5 px-5 py-2 md:mt-2 lg:mt-0 bg-green text-white hover:bg-liteblack font-base font-semibold tracking-0.2" >Launch App.</button>
+          <button class="rounded-lg xl:py-3 xl:px-7 lg:px-6 lg:py-2.5 md:px-5 md:py-2 px-4 py-1.5 md:mt-2 lg:mt-0 bg-green text-white hover:bg-liteblack sm:text-base text-sm font-semibold tracking-0.2" >Launch App.</button>
           </div>
         </div>
       </div> 
-        <button onclick="dropdown() " ondblclick="double()" class="lg:hidden md:inline-flex float-left"><i class="fa fa-bars " aria-hidden="true"></i></button>
+        <button (click)="dropdown()"  class="lg:hidden md:inline-flex float-left"><i class="fa fa-bars" aria-hidden="true"></i></button>
       </div>
     </nav>
 </header>
