@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.img-fluid{
+    max-width: 100%;
+ }
+ 
+ .min-100{
+    min-height: 100px;
+ }
+ 
+ .accordion-content{
+     display: none; 
+ }
+ .accordion-item:hover .accordion-content{
+    display: block;
+ }
+ .accordion-item:hover .accordian-head{
+    padding-top:13px;
+    padding-bottom: 7px;
+ }
+ 
+ .accordion-transition{
+    transition-property: width;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+ }
+ 
+ .accordian-head{
+    padding-top:16px;
+    padding-bottom: 16px;
+ }
+ .footer-image{
+    background: url("/assets/images/footer-background.png") #006736 0px -299.98px / 100% 282.804% no-repeat;
+ }
+ 
+ .explore:hover .explore-img-body{
+    color:#006736;
+ }
+ 
+ 
+ hover:fill-green
+ .background-wavy::after{
+    content:'';
+    position:absolute;
+    height: 440px;
+    width: 100%;
+    top: 120px;
+    background-position: bottom;
+    background-size: cover;
+    background-image: url("/assets/images/wavy-background.png");
+ }
+ 
+ @media (max-width:1024px){
+    /* .accordion-item:hover .accordian-main{
+       padding-top: 10px;
+       padding-bottom: 10px;
+    } */
+ 
+    .accordion-item:hover .accordian-head{
+       padding-top:10px;
+       padding-bottom: 5px;
+     
+    }
+ }
